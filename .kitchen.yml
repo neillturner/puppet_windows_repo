@@ -1,0 +1,24 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: puppet_apply
+  manifests_path: spec/manifests
+  modules_path: .kitchen-modules
+  require_chef_for_busser: false
+  resolve_with_librarian_puppet: false
+
+platforms:
+  - name: windows-2012r2
+    driver_plugin: vagrant
+    driver_config:
+      box: mwrock/Windows2012R2
+    transport:
+      name: winrm
+      elevated: true
+
+suites:
+  - name: default
+    provisioner:
+      manifest: default.pp

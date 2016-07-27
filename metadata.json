@@ -1,0 +1,23 @@
+{
+  "name": "neillturner-helloworld",
+  "version": "0.0.1",
+  "author": "neillturner",
+  "summary": "A Puppet module to echo helloworld",
+  "license": "Apache-2.0",
+  "source": "https://github.com/neillturner/puppet_windows_repo",
+  "project_page": "https://github.com/neillturner/puppet_windows_repo",
+  "issues_url": "https://github.com/neillturner/puppet_windows_repo/issues",
+  "description": "A Puppet module to echo helloworld",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "Server 2012",
+        "Server 2012 R2",
+        "8",
+        "10"
+      ]
+    }
+  ],
+  "dependencies": []
+}
